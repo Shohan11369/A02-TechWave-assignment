@@ -1,0 +1,272 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* common  */
+.container-share {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+/* navbar */
+.bg1 {
+  background: rgba(26, 11, 46, 1);
+  border-bottom: 1px solid rgb(168, 163, 163);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  color: white;
+}
+
+.nav-menu > h2 {
+  color: white;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.colorful-text {
+  background: linear-gradient(
+    90deg,
+    rgba(247, 233, 63, 1),
+    rgba(251, 9, 180, 1),
+    rgba(145, 0, 248, 1)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.bars {
+  display: none;
+}
+
+.btn-1 {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 14px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  background: var(
+    --Linear,
+    linear-gradient(
+      47deg,
+      rgba(247, 233, 63, 1),
+      rgba(251, 9, 180, 1),
+      rgba(145, 0, 248, 1)
+    )
+  );
+}
+
+.btn-1:hover {
+  background: rgba(62, 217, 147, 0.916);
+}
+
+/* banner section */
+
+.banner {
+  background-image: url(./images/hero-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 60vh;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.banner-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.banner-image {
+  position: relative;
+}
+
+.new-design {
+  position: absolute;
+  color: rgb(11, 10, 10);
+  background: rgb(22, 190, 72);
+  padding: 12px 18px;
+  border-radius: 16px;
+  right: 0;
+  top: 120px;
+  z-index: 6;
+}
+
+.banner-image .banner-image-1 {
+  max-width: 350px;
+  min-height: 350px;
+  margin-top: 80px;
+  text-align: center;
+  position: relative;
+}
+
+.banner-image .banner-image-2 {
+  position: absolute;
+  top: 180px;
+  right: 125px;
+  bottom: 120px;
+  max-width: 90px;
+  min-height: 90px;
+}
+
+.banner-main > h2 {
+  color: white;
+  font-size: 3.6rem;
+  font-weight: bold;
+  margin-top: 14px;
+}
+
+.banner-main > P {
+  color: #ffffff;
+  font-size: 0.9rem;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.btn-2 {
+  margin: 20px;
+}
+
+.btn-2-color {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 14px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  background: var(
+    --Linear,
+    linear-gradient(
+      47deg,
+      rgba(247, 233, 63, 1),
+      rgba(251, 9, 180, 1),
+      rgba(145, 0, 248, 1)
+    )
+  );
+}
+.btn-2 {
+  display: flex;
+  gap: 20px;
+  /* margin-bottom: 10px; */
+}
+
+.btn-2 .btn-2-color {
+  background-color:;
+}
+
+.btn-2 .btn-2-transparent {
+  background-color: transparent;
+  color: rgb(22, 190, 72);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 12px 18px;
+  border: 1px solid rgb(22, 190, 72);
+  border-radius: 20px;
+}
+
+/* podcast section */
+main {
+  background: rgba(26, 11, 46, 1);
+}
+.podcast {
+  padding: 30px;
+}
+
+.podcast-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.podcast-text > h2 {
+  font-size: 3.8rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.podcast-text .p-1 {
+  font-size: 0.8rem;
+  max-width: 550px;
+  margin-bottom: 14px;
+}
+
+
+.podcast-text .p-2 {
+  font-size: 0.8rem;
+  margin-bottom: 14px;
+}
+
+.podcast-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+    padding:20px;
+    margin-top: 20px;
+}
+
+.card-1 h1{
+    font-size: 3rem;
+    color:rgb(22, 190, 72);
+
+}
+
+.card-1 p{
+    font-size: 1rem;
+    color:white;
+}
+
+/* responsive */
+
+@media screen and (max-width: 576px) {
+  .nav-menu,
+  .btn-1 {
+    display: none;
+  }
+
+  .bars {
+    display: inline;
+    margin-right: 10px;
+  }
+
+  .banner {
+  }
+
+  .banner-image .banner-image-1 {
+    max-width: 200px;
+    min-height: 200px;
+    margin-top: 70px;
+  }
+
+  .banner-image .banner-image-2 {
+    position: absolute;
+    top: 110px;
+    right: 60px;
+    bottom: 110px;
+    max-width: 70px;
+    min-height: 70px;
+  }
+}
