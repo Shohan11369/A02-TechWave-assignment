@@ -83,6 +83,7 @@
   background-size: cover;
   background-position: center;
   min-height: 60vh;
+  border: none;
   /* display: flex;
   align-items: center;
   justify-content: center; */
@@ -184,10 +185,6 @@
 }
 
 /* podcast section */
-/* main {
-  background: rgba(26, 11, 46, 1);
-} */
-
 .podcast {
   background: rgba(26, 11, 46, 1);
   padding: 30px;
@@ -207,19 +204,21 @@
 
 .podcast-text > h2 {
   font-size: 3.8rem;
+  line-height: 1.6;
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
 .podcast-text .p-1 {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   max-width: 550px;
+  line-height: 2;
   margin-bottom: 14px;
 }
 
 .podcast-text .p-2 {
-  font-size: 0.8rem;
-  margin-bottom: 14px;
+  font-size: 0.9rem;
+  margin-bottom: 18px;
 }
 
 .podcast-card {
@@ -459,6 +458,14 @@ footer {
 
 /* responsive */
 @media screen and (max-width: 576px) {
+  .banner,
+  .podcast,
+  .techWave,
+  .Featured,
+  .host-bg,
+  footer {
+    margin-top: -1px;
+  }
   .nav-menu,
   .btn-1 {
     display: none;
@@ -474,7 +481,7 @@ footer {
   .banner-image .banner-image-1 {
     max-width: 200px;
     min-height: 200px;
-    margin-top: 70px;
+    /* margin-top: 70px; */
   }
 
   .banner-image .banner-image-2 {
@@ -512,6 +519,8 @@ footer {
     gap: 20px;
     padding: 20px;
     text-align: center;
+    margin-bottom: 0; /* margin adjust */
+    padding-bottom: 0;
   }
 
   /* techWave section */
