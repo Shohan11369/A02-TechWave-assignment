@@ -47,6 +47,13 @@
   font-weight: 500;
 }
 
+.nav-menu a:hover {
+  color: white;
+  background-color: #2d98e9;
+  padding: 15px 15px;
+  border-radius: 14px;
+}
+
 .bars {
   display: none;
 }
